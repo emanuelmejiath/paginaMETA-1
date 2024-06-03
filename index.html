@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>MetalForge</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="/Paginas-Web/pagina-metal/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
+    <link rel="stylesheet" href="/assets/IMAGEN_IA_576553358-1024x683 - copia.jpeg"/>
+    <link rel="icon" type="image/png" href="/assets/token_20dp_FILL0_wght400_GRAD0_opsz20.png">
+
+    <!-- ESTA ES LA PARTE DE LOS ESTILOS CSS -->
+
+    <style>
+        body{
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* ESTA ES LA SECCION DEL NAVBAR */
+
+.header, a, li, ul{
+    box-sizing: border-box;
+}
+
+.header{
+    background: linear-gradient(to left, #FFA400 5%, #FF6F45);
+    box-shadow: 0px 0px 10px 0px #0007;
+    margin: 0px;
+    box-sizing: border-box;
+    position:sticky;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.main-navbar{
+        box-sizing: border-box;
+        font-family: sans-serif;
+        
+        flex-grow: 1;
+        margin: auto;
+    }
+    
+    .material-symbols-outlined{
+        margin: auto;
+        flex-grow: 10;
+        padding-left: 30px;
+    }
+    
+    .material-symbols-outlined{
+        color: #bbb;
+    }
+    
+    .main-navbar ul {
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        flex-wrap: wrap;
+
+}
+
+.main-navbar li {
+    padding: 0px;
+    list-style: none;
+    margin: 5px 0px;
+}
+
+.list-container{
+    flex-grow: 5;
+}
+
+.main-navbar a {
+    background-color: #F646;
+    margin: 3.5px;
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding: 7px 8px;
+    border-radius: 6px;
+    transition-property: border-radius;
+    transition-duration: 0.5s;
+}
+
+.main-navbar a:hover{
+    border-radius: 40px;
+}
+
+li > .button-navbar{
+    color: #F64b;
+    background-color: #eee;
+}
+
+/* ESTA ES LA PARTE DEL MAIN */
+
+.main-wrapper{
+    box-sizing: border-box;;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    padding: 15px;
+}
+
+main{
+    margin: auto;
+
+}
+
+.main a{
+    display: inline-block;
+    font-family: sans-serif;
+    margin-top: 30px;
+}
+
+.main > a:nth-of-type(1){
+    color: #eee;
+    background-color: #101928;
+    padding: 15px 40px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.main > a:nth-of-type(2){
+    color: #101928;
+    margin: 10px 0px;
+    border: 1px solid #0005;
+    padding: 15px 30px;
+    border-radius: 10px;
+}
+
+h1{
+    font-size: 3em;
+    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h1 + p{
+    max-width: 1400px;
+    font-size: 1.8em;
+    color: #A5A2A6;
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+
+.img-ia{
+    width: 100%;
+    margin: auto;
+    max-width: 800px;
+    border-radius: 10px;
+    margin-top: 0px;
+}
+
+/* ESTA ES LA PARTE DE LA CATEGORIAS */
+
+.categories{
+    max-width: 100%;
+    min-height: 200px;
+    padding: 30px;
+    background-color: #EDEAEA;
+    box-sizing:border-box;
+}
+
+.title-categories{
+    margin: 16px 0px;
+}
+
+.categories h2{
+
+    margin: 0px;
+    margin: auto;
+    margin-top: 2px;
+    text-align: center;
+    font-size: 2em;
+}
+
+.categories p{
+    font-family: sans-serif;
+}
+
+h2 + p{  
+    text-wrap: pretty;
+    color: #777;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.categories p:first-child{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+/* TIPOS DE CATEGORIAS */
+
+.section-categories p{
+    color: #777;
+}
+
+.section-categories h3{
+    font-size: 1.5em;
+}
+
+@media screen and (min-width: 1000px){
+    .section-categories{
+        padding-left: 10px;
+    }
+}
+
+/* ESTA ES LA PARTE DEL INICIO DE SECCION */
+
+.recond{
+    margin: auto;
+    padding: 30px;
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.recond h2{
+    text-align: center;
+}
+
+.recond p{
+    font-family: sans-serif;
+}
+
+.recond h2, p{
+    margin: auto;
+    font-size: 1.5em;
+    margin: 10px 0px;
+}
+
+.recond-data{
+    margin: auto;
+}
+
+
+input{
+    width: 200px;
+    padding: 6px;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid #0006;
+}
+
+input:valid{
+    color: green;
+}
+
+input::placeholder{
+    font-weight: bolder;
+}
+
+input:focus-visible{
+    outline: none;
+}
+
+.button{
+    width: 90px;
+    padding: 7px 0px;
+    border-radius: 5px;
+    border: none;
+    background-color: #1c1c1c;
+    color: #fff;
+    box-shadow: 0px 0px 5px 0px #0006;
+}
+
+.terms-condition{
+    text-align: center;
+    padding: 4px 0px;
+    font-size: 15px;
+}
+
+.checkbox{
+    width: 25px;
+    margin: 0px;
+    display: inline-block;
+}
+
+/* Esta es la parte del footer */
+
+footer{
+    border: 1px solid #f00;
+    padding: 30px;
+    background-color: #1c1c1c;
+}
+
+footer p{
+    color: #fff;
+    font-family:sans-serif;
+}
+
+
+
+
+    </style>
+
+    
+</head>
+
+
+<body>
+
+    <header class="header">
+        <span class="material-symbols-outlined">
+            token
+            </span>
+        <nav class="main-navbar">
+            <div class="list-container">
+                <ul>
+                    <li><a href="#" rel="noreferrer">Inicio</a></li>
+                    <li><a href="#" rel="noreferrer">Ofertas</a></li>
+                    <li><a href="#categories" rel="noreferrer">Categorias</a></li>
+                    <li><a href="#" class="button-navbar" rel="noreferrer">Log In</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="main-wrapper">
+        <img class="img-ia"  src="/assets/IMAGEN_IA_576553358-1024x683 - copia.jpeg" alt="imagen de empleado mirando una maquinaria" title="Foto de empleados">
+        <main class="main">
+            <h1>Industria Metalurgia: Tecnología y Maestría</h1>
+            <p>
+                Como referentes en la industria metalurgia, en MetalForge Ingeniería combinamos experiencia y tecnología para producir soluciones metalurgia de alta calidad. Nuestros profesionales altamente capacitados aseguran que cada producto cumpla con las normativas y expectativas del mercado, ofreciendo durabilidad y precisión en cada proyecto.</p>
+            
+            <a href="#" rel="noreferrer">Únete a nosotros</a>
+            <a href="#" rel="noreferrer">Aprende más</a>
+        </main>
+    </div>
+            
+    
+    <!-- ESTOY TRABAJANDO ES ESTA PARTE -->
+            
+    <div class="categories" id="categories">
+                
+                <setion class="section">
+                    <p class="text-section">Categorias</p>
+                    <h2>Nuestros Servicios Metalúrgicos</h2>
+                    <p>Explora nuestros servicios expertos en metalurgia, desde corte y soldadura hasta diseño personalizado y mantenimiento, diseñados para llevar tus proyectos al siguiente nivel con precisión y eficiencia.
+                    </p>
+                    
+                    <div class="section-categories">
+                        <h3 class="title-categories" >Productos:</h3>
+                    <p>Descubre nuestra amplia gama de productos metálicos, que incluyen estructuras, componentes, herramientas y más, fabricados con los más altos estándares de calidad.</p>
+                    
+                    <h3 class="title-categories" >Tecnología y Innovación:</h3>
+                    <p>Explora nuestra dedicación a la innovación en la industria metálica, desde tecnologías avanzadas hasta procesos de fabricación innovadores, que nos permiten ofrecer productos y servicios de vanguardia.</p>
+                    
+                    <h3 class="title-categories" >Empresa:</h3>
+                    <p>Aprende más sobre nuestra empresa, desde nuestra historia y valores hasta nuestro talentoso equipo de expertos y nuestras modernas instalaciones, que nos han convertido en líderes en la industria.</p>
+                    
+                    <h3 class="title-categories" >Contacto:</h3>
+                    <p>Ponte en contacto con nosotros para obtener más información, asistencia personalizada o solicitar un presupuesto, y descubre cómo nuestro equipo de expertos está aquí para ayudarte en cada paso del camino.</p>
+                
+                
+                </div>
+                </setion>
+    </div>
+
+            <aside class="recond">
+                <h2>Únete para Acceder a Beneficios Exclusivos</h2>
+                <p>Regístrate hoy para recibir descuentos exclusivos y actualizaciones importantes sobre nuestros productos y servicios. ¡Es gratis y toma solo unos segundos! No te pierdas las ventajas de ser parte de nuestra comunidad. Regístrate ahora.</p>
+                
+                <div class="recond-data">
+                <input type="email" id="email" name="email" placeholder="Coloque su email"></input>
+                <button class="button">Enviar</button>
+                </div>
+
+                <small class="terms-condition">Acepto los ternimos y <a href="#">Condiciones</a><small>
+                <input class="checkbox" type="checkbox">
+
+            </aside>
+
+        <footer>
+            <p>&copyEmanuel 2024-2025 Todos los derechos reservados. Contáctanos para más información. Síguenos en redes sociales. ¡Gracias por visitarnos!</p>
+            <a href="#" rel="noreferrer">Terminos y servicios</a>
+            <a href="#" rel="noreferrer">Privacidad</a>
+        </footer>
+
+    
+</body>
+
+</html>
